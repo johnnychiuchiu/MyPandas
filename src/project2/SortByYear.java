@@ -16,6 +16,7 @@ class SortByYear implements Comparator<WriteLine>
 	
     public int compare(WriteLine a, WriteLine b)
     {
-        return a.year - b.year;
+//    		return a.year.compareTo(b.year);   
+    		return a.year - b.year;
     }
 }

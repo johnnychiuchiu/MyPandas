@@ -4,12 +4,11 @@ import java.util.ArrayList;
 
 public class WriteLine {
 	String state, gender, name, rowname;
-    int year, count;
+	int year, count;
  
     // Constructor
-    public WriteLine(String rowname, String state, String gender, int year, String name, int count)
-    {
-    		this.rowname = rowname;
+    public WriteLine(String state, String gender, int year, String name, int count)
+    {    		
         this.state = state;
         this.gender = gender;
         this.year = year;
@@ -17,9 +16,6 @@ public class WriteLine {
         this.count = count;
     }
  
-    public String getRowname() {
-		return this.rowname;
-}
     public String getState() {
     		return this.state;
     }
@@ -28,16 +24,16 @@ public class WriteLine {
 		return this.gender;
     }
     
-    public int getYear() {
-		return this.year;
+    public String getYear() {    	
+		return String.valueOf(this.year);
     }
     
     public String getName() {
 		return this.name;
     }
     
-    public int getCount() {
-		return this.count;
+    public String getCount() {
+		return String.valueOf(this.count);
     }
     
     // Used to print student details in main()

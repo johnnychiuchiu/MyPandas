@@ -16,6 +16,7 @@ class SortByCount implements Comparator<WriteLine>
 	
     public int compare(WriteLine a, WriteLine b)
     {
+//    		return a.count.compareTo(b.count);
         return a.count - b.count;
     }
 }
