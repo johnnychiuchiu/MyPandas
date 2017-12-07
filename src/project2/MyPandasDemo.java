@@ -41,7 +41,7 @@ public class MyPandasDemo {
 		System.out.println(mydf.dtypes(3));
 		
 		// Test case of String dType(String name) Returns the type of the column specified by name. If the type is not uniform, return ‘String’.
-		mypandaDemo.separateLine("Test case of dType(name) Returns the type of the column specified by index.");	
+		mypandaDemo.separateLine("Test case of dType(name) Returns the type of the column specified by name.");	
 		System.out.println(mydf.dtypes("name"));
 		
 		
@@ -60,6 +60,7 @@ public class MyPandasDemo {
 		System.out.println(mydf.slice("name"));
 		
 		// Test case of MyDataFrame slice(String[] nameArr) Returns the columns specified by a name array.
+		mypandaDemo.separateLine("Test case of MyDataFrame slice(String[] nameArr) Returns the columns specified by a name array.");
 		String[] myStrArray = {"name","state"};
 		System.out.println(mydf.slice(myStrArray));
 		
@@ -105,8 +106,8 @@ public class MyPandasDemo {
 
 		// Test case of Object getMax(int index) Returns the maximum element of the column specified by index.
 		mypandaDemo.separateLine("Test case of Object getMax(4) Returns the maximum element of the column specified by index");
-		System.out.println(mydf.getMax(4));
 		System.out.println(mydf.getMax(3));
+		System.out.println(mydf.getMax(4));		
 		
 		// Test case of Object getMax(String label) Returns the maximum element of the column specified by label.
 		mypandaDemo.separateLine("Test case of Object getMax(\"name\") Returns the maximum element of the column specified by index");
